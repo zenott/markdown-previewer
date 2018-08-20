@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { MarkdownPreview } from 'react-marked-markdown';
 import './App.css';
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
           <span>Previewer</span>
           </div>
           <div id="previewer-content">
+            <MarkdownPreview value={ "## valami" }/>
           </div>
         </div>
       </div>
