@@ -22,7 +22,7 @@ class App extends Component {
       <div className="App">
         <div id="editor">
           <div id="editor-titlebar" className="titlebar">
-            <span>Editor</span>
+            <span><i className="fa fa-edit fa-pull-left"></i>Editor</span><i className="fas fa-expand-arrows-alt window-control"></i>
           </div>
           <div id="editor-content">
             <textarea onChange={this.handleChange} value={this.state.value}/>
@@ -30,7 +30,7 @@ class App extends Component {
         </div>
         <div id="previewer">
           <div id="previewer-titlebar" className="titlebar">
-          <span>Previewer</span>
+          <span><i className="far fa-file-alt fa-pull-left"></i>Previewer</span><i className="fas fa-expand-arrows-alt window-control"></i>
           </div>
           <div id="previewer-content">
             <MarkdownPreview value={ this.state.value }/>

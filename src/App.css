@@ -22,17 +22,24 @@
 }
 
 #previewer{
-  width: 900px;
+  width: 800px;
   min-height: 400px;
   background-color: #C0D8D8;
   border: 1px solid #000000;
   box-shadow: 0px 0px 20px;
 }
 
+#previewer-content{
+  padding:10px;
+}
+
 .titlebar{
-  height: 25px;
   background-color: #4AA3A3; 
   border-bottom: 1px solid #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 8px;
 }
 
 textarea{
@@ -44,4 +51,10 @@ textarea{
   outline: none;
   flex:1;
   border: none;
+  padding:8px;
+}
+
+.window-control:hover{
+  color: #00ffff;
+  cursor: pointer;
 }
