@@ -78,3 +78,41 @@ textarea{
 .hide{
   display: none !important;
 }
+
+#previewer-content blockquote {
+  border-left: 3px solid #224B4B;
+  color: #224B4B;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+
+#previewer-content code {
+  background: white;
+  padding: 1px 4px 2px 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#previewer-content pre {
+  background: white;
+  padding: 5px 0 5px 5px;
+}
+
+#previewer-content h1 {
+  border-bottom: 2px solid #224B4B;
+}
+
+#previewer-content h2 {
+  border-bottom: 1px solid #224B4B;
+}
+
+#previewer-content table {
+  border-collapse: collapse;
+}
+
+#previewer-content td,
+#previewer-content th {
+  border: 2px solid #224B4B;
+  padding-left: 5px;
+  padding-right: 5px;
+}
