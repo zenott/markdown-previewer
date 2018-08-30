@@ -7,7 +7,7 @@
     "gh-pages": "^1.2.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-marked-markdown": "github:Vincent-P/react-marked-markdown",
+    "react-markdown-renderer": "^1.4.0",
     "react-scripts": "1.1.4"
   },
   "scripts": {
