@@ -46,12 +46,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div id="editor" className={(this.state.editorMaximized ? 'ed-max ' : '')+(this.state.previewerMaximized ? 'hide' : '')}>
+        <div id="editor-div" className={(this.state.editorMaximized ? 'ed-max ' : '')+(this.state.previewerMaximized ? 'hide' : '')}>
           <div id="editor-titlebar" className="titlebar">
             <span><i className="fa fa-edit fa-pull-left"></i>Editor</span><i className={this.state.editorMaximized ? "fas fa-window-minimize window-control" : "fas fa-expand-arrows-alt window-control"} onClick={this.maximizeEditor}></i>
           </div>
           <div id="editor-content">
-            <textarea onChange={this.handleChange} value={this.state.value}/>
+            <textarea id="editor" onChange={this.handleChange} value={this.state.value}/>
           </div>
         </div>
         <div id="previewer" className={(this.state.editorMaximized ? 'hide ' : '')+(this.state.previewerMaximized ? 'prev-max' : '')}>
@@ -59,7 +59,7 @@ class App extends Component {
           <span><i className="far fa-file-alt fa-pull-left"></i>Previewer</span><i className={this.state.previewerMaximized ? "fas fa-window-minimize window-control" : "fas fa-expand-arrows-alt window-control"} onClick={this.maximizePreviewer}></i>
           </div>
           <div id="previewer-content">
-            <MarkdownRenderer markdown={this.state.value} />
+            <MarkdownRenderer id="preview" markdown={this.state.value} />
           </div>
         </div>
       </div>
