@@ -5,8 +5,8 @@
   "homepage": "https://zenott.github.io/markdown-previewer",
   "dependencies": {
     "gh-pages": "^1.2.0",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
     "react-markdown-renderer": "^1.4.0",
     "react-scripts": "1.1.4"
   },
