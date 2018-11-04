@@ -2,13 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #87B5B5;
+  background-color: #87b5b5;
 }
 
-#editor-div{
-  width: 600px;
+#editor-div {
+  max-width: 600px;
+  width: 90%;
+  min-width: 340px;
   min-height: 400px;
-  background-color: #C0D8D8;
+  background-color: #c0d8d8;
   margin: 20px;
   border: 1px solid #000000;
   box-shadow: 0px 0px 20px;
@@ -16,29 +18,31 @@
   flex-direction: column;
 }
 
-#editor-content{
+#editor-content {
   width: 100%;
   min-height: 375px;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   flex: 1;
 }
 
-#previewer{
-  width: 850px;
+#previewer {
+  max-width: 850px;
+  width: 90%;
+  min-width: 340px;
   min-height: 400px;
   margin: 0px 20px 20px 20px;
-  background-color: #C0D8D8;
+  background-color: #c0d8d8;
   border: 1px solid #000000;
   box-shadow: 0px 0px 20px;
 }
 
-#previewer-content{
-  padding:10px;
+#previewer-content {
+  padding: 10px;
 }
 
-.titlebar{
-  background-color: #4AA3A3; 
+.titlebar {
+  background-color: #4aa3a3;
   border-bottom: 1px solid #000000;
   display: flex;
   justify-content: space-between;
@@ -48,40 +52,40 @@
   font-size: 18px;
 }
 
-textarea{
+textarea {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  background-color: #C0D8D8;
-  resize:vertical;
+  background-color: #c0d8d8;
+  resize: vertical;
   outline: none;
-  flex:1;
+  flex: 1;
   border: none;
-  padding:8px;
+  padding: 8px;
 }
 
-.window-control:hover{
+.window-control:hover {
   color: #00ffff;
   cursor: pointer;
 }
 
-.ed-max{
+.ed-max {
   width: 95vw !important;
   height: 95vh !important;
 }
 
-.prev-max{
+.prev-max {
   width: 95vw !important;
   margin-top: 20px !important;
 }
 
-.hide{
+.hide {
   display: none !important;
 }
 
 #previewer-content blockquote {
-  border-left: 3px solid #224B4B;
-  color: #224B4B;
+  border-left: 3px solid #224b4b;
+  color: #224b4b;
   padding-left: 5px;
   margin-left: 25px;
 }
@@ -99,11 +103,11 @@ textarea{
 }
 
 #previewer-content h1 {
-  border-bottom: 2px solid #224B4B;
+  border-bottom: 2px solid #224b4b;
 }
 
 #previewer-content h2 {
-  border-bottom: 1px solid #224B4B;
+  border-bottom: 1px solid #224b4b;
 }
 
 #previewer-content table {
@@ -112,7 +116,12 @@ textarea{
 
 #previewer-content td,
 #previewer-content th {
-  border: 2px solid #224B4B;
+  border: 2px solid #224b4b;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+#previewer-content img {
+  width: 100%;
+  height: auto;
 }
